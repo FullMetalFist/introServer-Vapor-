@@ -1,15 +1,31 @@
-# Basic Template
+# introServer
 
-A basic vapor template for starting a new Vapor web application. If you're using vapor toolbox, you can use: `vapor new --template=basic`
+## install Homebrew
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-## 📖 Documentation
+## install MongoDB using Homebrew
 
-Visit the Vapor web framework's [documentation](http://docs.vapor.codes) for instructions on how to use this package.
+`brew update`
+`brew install mongodb`
 
-## 💧 Community
+## install Vapor toolbox
 
-Join the welcoming community of fellow Vapor developers in [slack](http://vapor.team).
+`curl -sL toolbox.vapor.sh | bash`
+`vapor new <name> [--template=<repo-url-or-github-path>]`
 
-## 🔧 Compatibility
+## MongoKitten Quick Start
 
-This package has been tested on macOS and Ubuntu.
+`swift package init --type executable`
+`.Package(url: "https://github.com/OpenKitten/MongoKitten.git", majorVersion: 3)`
+
+## Run & Serve
+`mongod`
+_new Terminal window_
+`vapor self update`
+`vapor build`
+`vapor run serve`
+
+## Vapor documentation
+https://vapor.github.io/documentation/
+## MongoKitten documentation
+http://docs.openkitten.org/installation-guide/installation-guide/
